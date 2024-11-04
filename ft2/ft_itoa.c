@@ -6,7 +6,38 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 08:34:29 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/11/02 08:34:30 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/04 11:58:18 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+size_t	nbrlen(int n)
+{
+	size_t i;
+
+	i = 0;
+	if(n == -2147483648)
+	{
+		i = 11;
+		return(i);
+	}
+	else if (n < 0)
+	{
+		i++;
+		n = n * (-1);
+	}
+	while (n > 9)
+	{
+		n = n / 10;
+		i++;	
+	}
+	if ( n <= 9)
+		i++;
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	
+}
