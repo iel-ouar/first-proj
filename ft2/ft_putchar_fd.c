@@ -6,7 +6,13 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 08:34:34 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/11/02 08:34:35 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/05 10:12:18 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd,&c,1);
+}
