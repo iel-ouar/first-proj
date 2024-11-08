@@ -6,7 +6,7 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 08:34:50 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/11/05 10:15:59 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:05:00 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i])
 	{
-		write(fd,&s[i],1);
+		write(fd, &s[i], 1);
 		i++;
 	}
 }

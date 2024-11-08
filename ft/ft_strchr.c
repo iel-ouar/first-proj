@@ -6,7 +6,7 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:57:08 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/10/23 15:25:29 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/07 14:17:01 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	while (s)
 	{
 		if (c == *s)
-			return ((char * )s);
+			return ((char *)s);
 		s++;
 	}
 	return (NULL);

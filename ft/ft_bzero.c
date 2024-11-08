@@ -6,7 +6,7 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 11:27:19 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/10/27 11:27:22 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:28:55 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	bzero(void *s, size_t n)
 {
-	char *tmp;
+	char	*tmp;
 
 	tmp = (char *)s;
-
 	while (n > 0)
 	{
 		*tmp = 0;

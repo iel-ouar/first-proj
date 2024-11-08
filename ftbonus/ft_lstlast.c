@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 08:34:38 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/11/07 16:02:07 by iel-ouar         ###   ########.fr       */
+/*   Created: 2024/11/05 11:30:16 by iel-ouar          #+#    #+#             */
+/*   Updated: 2024/11/08 17:53:55 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-	write(fd, "\n", 1);
+	t_list	*ptr;
+	
+	if (!lst)
+		return (NULL);
+	ptr = lst;
+	while (ptr->next)
+		ptr = ptr->next;
+	return (ptr);
 }

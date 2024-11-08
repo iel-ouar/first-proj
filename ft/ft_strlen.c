@@ -6,17 +6,17 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:11:21 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/10/23 10:32:28 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/07 14:28:51 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen (const char *str)
+size_t	ft_strlen(const char *str)
 {
-	size_t i;
-	i = 0;
+	size_t	i;
 
+	i = 0;
 	while (str[i] != '\0')
 		i++;
 	return (i);

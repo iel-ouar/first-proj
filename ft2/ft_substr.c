@@ -6,28 +6,28 @@
 /*   By: iel-ouar <iel-ouar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 08:35:27 by iel-ouar          #+#    #+#             */
-/*   Updated: 2024/11/02 08:35:29 by iel-ouar         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:20:36 by iel-ouar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start,size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *tmp;
-	size_t i;
-	size_t l;
+	char	*tmp;
+	size_t	i;
+	size_t	l;
 
-	if(!s)
-		return(NULL);
+	if (!s)
+		return (NULL);
 	l = ft_strlen(s);
 	if (start >= l)
-		return("");
+		return ("");
 	if (len > l - start)
-	       len = l - start;
-	tmp = (char *)malloc (len + 1;)
+		len = l - start;
+	tmp = (char *)malloc (len + 1);
 	if (!tmp)
-		return(NULL);
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
@@ -35,5 +35,5 @@ char	*ft_substr(char const *s, unsigned int start,size_t len)
 		i++;
 	}
 	tmp[i] = '\0';
-	return(tmp);
+	return (tmp);
 }
